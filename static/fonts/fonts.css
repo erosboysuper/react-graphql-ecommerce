@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('TitilliumWeb-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Black';
+  src: url('TitilliumWeb-Black.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Light';
+  src: url('TitilliumWeb-Light.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Bold';
+  src: url('TitilliumWeb-Bold.woff2') format('woff2');
+  font-display: swap;
+}

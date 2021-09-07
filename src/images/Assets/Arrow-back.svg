@@ -1,0 +1,8 @@
+<svg id="Arrow-back" xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
+  <circle id="Shadow" cx="28" cy="28" r="28" transform="translate(2 2)"/>
+  <g id="Button" fill="#fff" stroke="#000" stroke-width="2">
+    <circle cx="28" cy="28" r="28" stroke="none"/>
+    <circle cx="28" cy="28" r="27" fill="none"/>
+  </g>
+  <path id="Trazado_73" data-name="Trazado 73" d="M4367.057,5006.319a1,1,0,0,0-.937-.943h-19.964l8.175-8.361a.982.982,0,0,0,.251-.659,1.141,1.141,0,0,0-.269-.673,1.006,1.006,0,0,0-.667-.243.765.765,0,0,0-.578.251l-9.74,10.053a1.023,1.023,0,0,0,0,1.394l9.727,10.041a.91.91,0,0,0,1.282-.006,1.055,1.055,0,0,0,0-1.451l-8.18-8.367h19.9A1.032,1.032,0,0,0,4367.057,5006.319Z" transform="translate(-4327.057 -4978.439)"/>
+</svg>

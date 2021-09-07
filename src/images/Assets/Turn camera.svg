@@ -1,0 +1,7 @@
+<svg id="Turn_camera" data-name="Turn camera" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <circle id="Circle" cx="23" cy="23" r="23" fill="#202122" opacity="0.8"/>
+  <path id="Trazado_306" data-name="Trazado 306" d="M-204.758,21.127a10.853,10.853,0,0,1,7.939-3.439,10.884,10.884,0,0,1,10.884,10.883v1.495" transform="translate(219.438 -5.688)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Trazado_307" data-name="Trazado 307" d="M-206.015,93.243a10.843,10.843,0,0,1-7.293,2.8,10.884,10.884,0,0,1-10.883-10.884v-.776" transform="translate(236.735 -63.047)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Trazado_308" data-name="Trazado 308" d="M-92.552,84.388-95.1,86.933l-2.544-2.544" transform="translate(128.552 -62.684)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Trazado_309" data-name="Trazado 309" d="M-240.982,85.727l2.544-2.544,2.544,2.544" transform="translate(250.982 -61.654)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+</svg>

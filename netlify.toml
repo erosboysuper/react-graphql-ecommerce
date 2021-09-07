@@ -1,0 +1,152 @@
+[[redirects]]
+    from = "/"
+    to = "/ch-en/"
+    status = 301
+    force = true
+    conditions = {Country = ["CH"]}
+
+[[redirects]]
+    from = "/collections/*"
+    to = "/ch-en/:splat"
+    status = 301
+    conditions = {Country = ["CH"]}
+
+[[redirects]]
+    from = "/products/*"
+    to = "/ch-en/:splat"
+    status = 301
+    conditions = {Country = ["CH"]}
+
+[[redirects]]
+    from = "/cart/*"
+    to = "/ch-en/cart/:splat"
+    status = 301
+    force = true
+    conditions = {Country = ["CH"]}
+
+[[redirects]]
+    from = "/discount/*"
+    to = "/ch-en/discount/:splat"
+    status = 301
+    force = true
+    conditions = {Country = ["CH"]}
+
+[[redirects]]
+    from = "/"
+    to = "/de/"
+    status = 301
+    force = true
+    conditions = {Country = ["DE"]}
+
+[[redirects]]
+    from = "/collections/*"
+    to = "/de/:splat"
+    status = 301
+    conditions = {Country = ["DE"]}
+
+[[redirects]]
+    from = "/products/*"
+    to = "/de/:splat"
+    status = 301
+    conditions = {Country = ["DE"]}
+
+[[redirects]]
+    from = "/cart/*"
+    to = "/de/cart/:splat"
+    status = 301
+    force = true
+    conditions = {Country = ["DE"]}
+
+[[redirects]]
+    from = "/discount/*"
+    to = "/de/discount/:splat"
+    status = 301
+    force = true
+    conditions = {Country = ["DE"]}
+
+[[redirects]]
+    from = "/"
+    to = "/us/"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/collections/*"
+    to = "/us/:splat"
+    status = 301
+
+[[redirects]]
+    from = "/products/*"
+    to = "/us/:splat"
+    status = 301
+
+[[redirects]]
+    from = "/cart/*"
+    to = "/us/cart/:splat"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/discount/*"
+    to = "/us/discount/:splat"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/the-wild-at-heart-trunk-limited-edition/"
+    to = "/us/the-wild-at-heart-trunk-limited-edition/"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/pages/*"
+    to = "/"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/undefined/*"
+    to = "/"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/reviews"
+    to = "/"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/favicon.ico"
+    to = "/favicon-32x32.png"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/us@tbounderwear"
+    to = "/"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/us/community"
+    to = "/community"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/page-data/us/community/page-data.json"
+    to = "/"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/page-data/us@tbounderwear/page-data.json"
+    to = "/"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/"
+    to = "/404/"
+    status = 404

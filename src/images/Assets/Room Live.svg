@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.5" height="20.5" viewBox="0 0 45.5 20.5">
+  <g id="Room_Live" data-name="Room Live" transform="translate(1.5 1.5)">
+    <rect id="Shadow" width="42" height="19" rx="9.5" transform="translate(2)" fill="#202122"/>
+    <g id="Box" fill="#fff" stroke="#202122" stroke-width="1.5">
+      <rect width="40" height="16" rx="8" stroke="none"/>
+      <rect x="-0.75" y="-0.75" width="41.5" height="17.5" rx="8.75" fill="none"/>
+    </g>
+    <text id="LIVE" transform="translate(19.667 11)" fill="#161617" font-size="10" font-family="TitilliumWeb-Bold, Titillium Web" font-weight="700" letter-spacing="0.15em"><tspan x="-11.825" y="0">LIVE</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+.data-flyout,
+.data-flyout * {
+  box-sizing: border-box;
+}
+.data-flyout {
+  width: 100%;
+  padding: 0 15px 15px 15px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  color: #555;
+  background: white;
+  font-size: 10pt;
+  text-align: left;
+  opacity: 1;
+  z-index: 500;
+  pointer-events: all;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 1px, rgba(0, 0, 0, 0.5) 0 5px 15px;
+  transition: right 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+.data-flyout .heading {
+  display: flex;
+}
+.data-flyout .img-container {
+  min-width: 80px;
+  max-width: 80px;
+  margin: 0 15px 0 0;
+  width: auto;
+}
+.data-flyout .img-container img {
+  width: 100%;
+  height: auto;
+}
+.data-flyout h2 {
+  margin: -15px -15px 15px -15px;
+  padding: 15px;
+  color: white;
+  background: #ff8c00;
+  line-height: 1;
+  font-size: 14pt;
+  font-weight: 600;
+}
+.data-flyout h3 {
+  color: #111;
+  margin: 0 0 5px 0;
+  line-height: 1.2;
+  font-size: 12pt;
+  letter-spacing: -0.02em;
+}
+.data-flyout p {
+  margin: 0;
+}
+.data-flyout .buttons {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.data-flyout .button {
+  width: auto;
+  display: inline-block;
+  color: #ff8c00;
+  cursor: pointer;
+}
+.data-flyout .close {
+  color: #acacac;
+}
+
+.data-flyout h2,
+.data-flyout h3,
+.data-flyout img,
+.data-flyout p {
+  display: none;
+}
+
+@media (min-width: 300px) {
+  .data-flyout {
+    padding-top: 15px;
+  }
+  .data-flyout img,
+  .data-flyout h3 {
+    display: block;
+  }
+}
+
+@media (min-width: 365px) {
+  .data-flyout p,
+  .data-flyout h2 {
+    display: block;
+  }
+}
+
+@media (min-width: 500px) {
+  .data-flyout {
+    max-width: 400px;
+    right: 10px;
+    border-radius: 0px 0px 10px 10px;
+  }
+}

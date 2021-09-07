@@ -1,0 +1,5 @@
+<svg id="Notification_active" data-name="Notification active" xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 30">
+  <path id="Trazado_175" data-name="Trazado 175" d="M165.86,447.1a2.954,2.954,0,1,0,5.906,0Z" transform="translate(-158.312 -420.141)" fill="#f2f2f7"/>
+  <path id="Trazado_176" data-name="Trazado 176" d="M19.358,17.577V11.155A9.05,9.05,0,0,0,11.593,2.1a1.373,1.373,0,0,0,.219-.746,1.313,1.313,0,1,0-2.625,0,1.373,1.373,0,0,0,.219.746A9.05,9.05,0,0,0,1.64,11.155v6.423H0v2.028H21V17.577Zm-1.969,0H3.608V11.155a7,7,0,0,1,6.891-7.1,7,7,0,0,1,6.891,7.1Z" transform="translate(0.001 6)" fill="#f2f2f7"/>
+  <circle id="Elipse_7" data-name="Elipse 7" cx="4" cy="4" r="4" transform="translate(16)" fill="#ff8c00"/>
+</svg>

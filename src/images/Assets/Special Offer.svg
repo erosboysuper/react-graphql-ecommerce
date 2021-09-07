@@ -1,0 +1,6 @@
+<svg id="Special_Offer" data-name="Special Offer" xmlns="http://www.w3.org/2000/svg" width="380" height="46" viewBox="0 0 380 46">
+  <path id="Box" d="M0,0H214l-8.094,46H0Z" transform="translate(380 46) rotate(180)" fill="#ff8c00"/>
+  <text id="Buy_2_get_1_free" data-name="Buy 2 get 1 free" transform="translate(273 27.413)" fill="#202122" font-size="14" font-family="TitilliumWeb-Bold, Titillium Web" font-weight="700" letter-spacing="0.1em"><tspan x="-64.89" y="0">BUY 2 GET 1 FREE</tspan></text>
+  <path id="Box-2" data-name="Box" d="M0,0H168l-8.253,46H0Z" fill="#202122"/>
+  <text id="SPECIAL_OFFER-2" data-name="SPECIAL OFFER" transform="translate(84 27.413)" fill="#ff8c00" font-size="14" font-family="TitilliumWeb-Bold, Titillium Web" font-weight="700" letter-spacing="0.1em"><tspan x="-55.251" y="0">SPECIAL OFFER</tspan></text>
+</svg>

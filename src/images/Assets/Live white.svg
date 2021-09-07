@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="61" viewBox="0 0 57 61">
+  <g id="Live_white" data-name="Live white" transform="translate(1.5 1.5)">
+    <g id="Circle" fill="none" stroke="#fff" stroke-width="1.5">
+      <circle cx="27" cy="27" r="27" stroke="none"/>
+      <circle cx="27" cy="27" r="27.75" fill="none"/>
+    </g>
+    <g id="Live" transform="translate(-22 -46)">
+      <g id="Tag" transform="translate(34 91)" fill="#fff" stroke="#202122" stroke-width="1.5">
+        <rect width="30" height="13" rx="6.5" stroke="none"/>
+        <rect x="-0.75" y="-0.75" width="31.5" height="14.5" rx="7.25" fill="none"/>
+      </g>
+      <text id="LIVE-2" data-name="LIVE" transform="translate(49 100)" fill="#161617" font-size="8" font-family="TitilliumWeb-Bold, Titillium Web" font-weight="700" letter-spacing="0.2em"><tspan x="-10.06" y="0">LIVE</tspan></text>
+    </g>
+  </g>
+</svg>

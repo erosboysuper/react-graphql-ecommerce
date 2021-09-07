@@ -1,0 +1,361 @@
+import React, { useContext, useEffect } from 'react'
+import { graphql } from 'gatsby'
+import styled from 'styled-components'
+
+import ProductContext from '~/context/ProductContext'
+import StoreContext from '~/context/StoreContext'
+import { Space, Cover, Letter } from '~/utils/styles'
+import { device } from '~/utils/device'
+
+import SEO from '~/components/seo'
+import Header from '~/components/pages/landing/Header'
+import LandingFrontNew from '~/components/pages/landing/LandingFrontNew'
+import AdLetter from '~/components/pages/Homepage/AdLetter'
+import GoodPoints from '~/components/pages/landing/GoodPoints'
+import TboDiff from '~/components/pages/landing/TboDiff'
+import Features from '~/components/pages/landing/Features'
+import CoCreated from '~/components/pages/landing/CoCreated'
+import NextPreview from '~/components/pages/landing/NextPreview'
+import Guarantee from '~/components/pages/landing/Guarantee'
+import Reviews from '~/components/pages/landing/Reviews'
+import FAQs from '~/components/Common/FAQs'
+import Footer from '~/components/Common/Footer'
+import Modal from '~/components/pages/landing/Modal'
+import CartModal from '~/components/pages/landing/CartModal'
+import SizeChart from '~/components/pages/products/SizeChart'
+
+const NewLandingPage = ({ data, pageContext: { locale, localeFolder } }) => {
+  let landingPage = data.datoSignupLandingPage || {}
+  const seo = landingPage.seo || {}
+  const { sizeChart, setSizeChart } = useContext(ProductContext)
+  const {
+    modal,
+    setModal,
+    landingCartModal,
+    setLandingCartModal,
+    setLocale,
+    setLocaleFolder,
+  } = useContext(StoreContext)
+
+  const usStoreRating = data.usStoreRating || {}
+  if (usStoreRating.product && usStoreRating.product.handle) {
+    landingPage.product['productReviewGroup'] =
+      usStoreRating.product.productReviewGroup || {}
+  }
+
+  const removeModal = (flag = false) => {
+    setModal(flag)
+    setLandingCartModal(flag)
+    setSizeChart(flag)
+  }
+
+  useEffect(() => {
+    console.log('landing page', landingPage)
+  }, [])
+
+  useEffect(() => {
+    setLocale(locale)
+    setLocaleFolder(localeFolder)
+  }, [locale, localeFolder])
+
+  return <React.Fragment></React.Fragment>
+}
+
+const ClaimButton = styled.div`
+  @media ${device.mobileS} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83px;
+    width: 100%;
+    background: #ff8c00;
+    position: fixed;
+    bottom: 0px;
+    z-index: 4;
+  }
+  @media ${device.laptop} {
+    display: none;
+  }
+`
+
+const Space1 = styled.div`
+  @media ${device.mobileS} {
+    background: transparent;
+    width: 100%;
+    height: 83px;
+  }
+  @media ${device.laptop} {
+    display: none;
+  }
+`
+
+const ConnectedContainer = styled.div`
+  background: linear-gradient(
+      162deg,
+      rgb(242, 242, 247) 0%,
+      rgb(253, 253, 253) 100%
+    )
+    0% 0% no-repeat padding-box padding-box transparent;
+`
+
+export const query = graphql`
+  query($handle: String!, $locale: String!) {
+    usStoreRating: datoCmsLandingPage(
+      locale: { eq: "en" }
+      handle: { eq: $handle }
+    ) {
+      product {
+        handle
+        productReviewGroup {
+          products {
+            variant {
+              sku
+            }
+          }
+        }
+      }
+    }
+    datoCmsLandingPage(locale: { eq: $locale }, handle: { eq: $handle }) {
+      id
+      showPromotion
+      promotionText
+      product {
+        id
+        name
+        handle
+        shopifyId
+        isSingleProduct
+        sizeChart {
+          heading
+          description
+          image {
+            url
+            fluid {
+              base64
+              aspectRatio
+              src
+              srcSet
+              sizes
+            }
+          }
+          sizes {
+            id
+            title
+            sizeVariant {
+              id
+              title
+              cmHelpText
+              inchHelpText
+            }
+          }
+        }
+        variant {
+          id
+          sku
+          shopifyId
+          availableForSale
+          price
+          compareAtPrice
+          color {
+            name
+            colorCode {
+              hex
+            }
+            colorImage {
+              url
+            }
+          }
+          size {
+            name
+            helpText
+          }
+          images {
+            url
+            fluid(
+              forceBlurhash: true
+              maxWidth: 910
+              imgixParams: { w: "300" }
+            ) {
+              sizes
+              aspectRatio
+              src
+              srcSet
+              width
+              height
+            }
+          }
+        }
+      }
+      price
+      compareAtPrice
+      couponCode
+      productHighlightTitle
+      productHighlights {
+        id
+        title
+      }
+      productImages {
+        url
+        fluid(forceBlurhash: true, maxWidth: 910, imgixParams: { w: "600" }) {
+          sizes
+          aspectRatio
+          src
+          srcSet
+          width
+          height
+        }
+      }
+      pageLogo {
+        url
+        fluid(forceBlurhash: true, maxWidth: 350) {
+          sizes
+          aspectRatio
+          src
+          srcSet
+          width
+          height
+        }
+      }
+      offerTitle
+      offerHighlight
+      offerMessage
+      hasFreeShippingOffer
+      buttonText
+      showCompanyLogo
+      testimonialMessage
+      testimonialGiveBy
+      highlightTitle
+      highlightImage {
+        url
+        fluid(forceBlurhash: true, maxWidth: 500, imgixParams: { w: "400" }) {
+          sizes
+          aspectRatio
+          src
+          srcSet
+          width
+          height
+        }
+      }
+      highlights {
+        id
+        title
+        shortText
+      }
+      awesomeFeatureTitle
+      awesomeFeatures {
+        id
+        title
+        shortText
+        image {
+          url
+          fluid(forceBlurhash: true, maxWidth: 500, imgixParams: { w: "250" }) {
+            sizes
+            aspectRatio
+            src
+            srcSet
+            width
+            height
+          }
+        }
+      }
+      showCoCreatedSection
+      coCreatedTitle
+      coCreatedHeading
+      coCreatedParagraph
+      coCreatedImage {
+        url
+        fluid(forceBlurhash: true, maxWidth: 910) {
+          sizes
+          aspectRatio
+          src
+          srcSet
+          width
+          height
+        }
+      }
+      desktopCoCreatedImage {
+        url
+        fluid(forceBlurhash: true, maxWidth: 1500) {
+          sizes
+          aspectRatio
+          src
+          srcSet
+          width
+          height
+        }
+      }
+      showGuaranteeSection
+      guaranteeTitle
+      guarantees {
+        id
+        title
+        image {
+          url
+          fluid(forceBlurhash: true, maxWidth: 910, imgixParams: { w: "110" }) {
+            sizes
+            aspectRatio
+            src
+            srcSet
+            width
+            height
+          }
+        }
+      }
+      showReviewSection
+      reviewTitle
+      reviewHeading
+      reviews {
+        id
+        reviewerName
+        reviewDate
+        starRating
+        reviewContent
+        reviewerImage {
+          url
+          fluid(forceBlurhash: true, maxWidth: 910) {
+            sizes
+            aspectRatio
+            src
+            srcSet
+            width
+            height
+          }
+        }
+        product {
+          id
+          name
+          handle
+          media {
+            url
+            fluid(forceBlurhash: true, maxWidth: 910) {
+              sizes
+              aspectRatio
+              src
+              srcSet
+              width
+              height
+            }
+          }
+        }
+        size {
+          id
+          name
+          helpText
+        }
+      }
+      faqs {
+        id
+        isPublished
+        title
+        description
+      }
+      shippingStages {
+        id
+        minimumAmount
+        displayText
+      }
+    }
+  }
+`
+
+export default NewLandingPage

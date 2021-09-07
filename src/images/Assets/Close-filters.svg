@@ -1,0 +1,8 @@
+<svg id="Close-filters" xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
+  <circle id="Shadow" cx="28" cy="28" r="28" transform="translate(2 2)" fill="#fff"/>
+  <g id="Button" fill="#161617" stroke="#fff" stroke-width="2">
+    <circle cx="28" cy="28" r="28" stroke="none"/>
+    <circle cx="28" cy="28" r="27" fill="none"/>
+  </g>
+  <path id="Trazado_78" data-name="Trazado 78" d="M5934.135,4385.867l6.174-6.193a1.057,1.057,0,0,0-1.493-1.5l-6.174,6.193-6.174-6.193a1.057,1.057,0,0,0-1.493,1.5l6.173,6.193-6.173,6.192a1.052,1.052,0,0,0,0,1.5,1.086,1.086,0,0,0,.759.3,1.166,1.166,0,0,0,.759-.3l6.173-6.194,6.174,6.194a1.086,1.086,0,0,0,.759.3,1.114,1.114,0,0,0,.759-.3,1.076,1.076,0,0,0,0-1.5l-6.2-6.218-.025.025Z" transform="translate(-5904.662 -4357.938)" fill="#fff"/>
+</svg>
